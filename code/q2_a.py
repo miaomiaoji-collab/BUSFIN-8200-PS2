@@ -152,7 +152,7 @@ def save_coefficient_plot(b_hat: np.ndarray, path: Path) -> None:
     ax.set_xticks(deciles)
     ax.set_xlabel("Book-to-market portfolio decile")
     ax.set_ylabel(r"Coefficient $\hat{b}_j$")
-    ax.set_title("Maximum-Sharpe Portfolio Coefficients")
+    ax.set_title("Maximum-Sharpe Book-to Market Portfolio Coefficients")
     ax.grid(axis="y", color="#dddddd", linewidth=0.6)
     ax.spines[["top", "right"]].set_visible(False)
     fig.tight_layout()
