@@ -37,7 +37,9 @@ Use this workflow only when the user explicitly invokes TP for substantive work 
    - Keep a contemporaneous list of files inspected, files directly modified, errors, omissions, ambiguities, substantive suggestions, and assistance categories.
    - Distinguish the user's decisions from suggestions made by the assistant.
 
-6. Append one interaction entry.
+6. Immediately append one new, standalone interaction entry.
+   - Every substantive explicit TP invocation is a separate interaction and must receive exactly one new entry immediately after its substantive work finishes.
+   - Never reuse, extend, or append an addendum to an entry from an earlier TP invocation, even when the new request is a closely related debugging or formatting follow-up.
    - Use `AI_INTERACTIONS.md` at the repository root. If it does not exist, create it with the single heading `# AI Interactions` before the first entry.
    - Append the new entry at the end of the file. Never delete, combine, reorder, edit, summarize, or rewrite existing entry text.
    - Preserve the user's substantive prompt verbatim, including relevant follow-up decisions. Exclude only the mechanical skill-selection token when it is not part of the substantive request.
@@ -54,7 +56,7 @@ Use this workflow only when the user explicitly invokes TP for substantive work 
 - **Files directly modified:** <paths, or None>
 - **Errors, omissions, or ambiguities identified:** <details, or None>
 - **Substantive mathematical, economic, or empirical suggestions:** <details, or None>
-- **Grouped minor subsequent requests:** <Yes/No; if Yes, summarize each and confirm same item and work session>
+- **Grouped minor requests within this invocation:** <Yes/No; if Yes, summarize the requests included in this invocation>
 
 ### User's substantive prompt
 
@@ -72,14 +74,13 @@ Use this workflow only when the user explicitly invokes TP for substantive work 
    - Record the full post-interaction commit hash and report both commit hashes to the user.
    - Do not push unless the user separately requests it.
 
-## Grouped minor follow-ups
+## Interaction boundaries
 
-Group a later debugging or formatting request only when the user explicitly asks to group it, it concerns the same problem-set item, and it occurs in the same work session.
-
-- If the interaction entry has not yet been finalized, include the follow-up in that entry before the post-interaction commit.
-- If the entry was already committed, append a clearly labeled addendum at the end of that same entry without altering any existing line, then commit the addendum and related changes. Report the additional commit hash.
-- Otherwise, treat the request as a new TP interaction with its own pre-interaction commit, entry, and post-interaction commit.
+- One substantive explicit TP invocation equals one interaction, one new standalone log entry, one pre-interaction commit, and one post-interaction commit.
+- Finalize and append the entry immediately after completing that invocation's substantive work; do not keep it open for possible later requests.
+- Treat every later substantive TP invocation as a new interaction, including closely related debugging or formatting requests concerning the same item in the same work session.
+- Multiple minor requests may share one entry only when the user includes them together in the same TP invocation. Never modify a prior entry to group a later request into it.
 
 ## Completion check
 
-Do not call the interaction complete until the item is identified, relevant policy is followed, substantive ambiguity is resolved by the user, the assistance is complete, the append-only log entry is present, and the post-interaction commit succeeds. If a commit or logging step fails, report the failure plainly and do not claim traceability is complete.
+Do not call the interaction complete until the item is identified, relevant policy is followed, substantive ambiguity is resolved by the user, the assistance is complete, its new standalone append-only log entry has been added immediately, and the post-interaction commit succeeds. If a commit or logging step fails, report the failure plainly and do not claim traceability is complete.
