@@ -23,7 +23,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 BM_FILE = REPO_ROOT / "data" / "Portfolios_Formed_on_BE-ME.csv"
 MOM_FILE = REPO_ROOT / "data" / "10_Portfolios_Prior_12_2.csv"
 FF3_FILE = REPO_ROOT / "data" / "ff3.csv"
-OUTPUT_DIR = REPO_ROOT / "output"
+OUTPUT_DIR = REPO_ROOT / "results"
 CSV_FILE = OUTPUT_DIR / "q2e_pricing_errors.csv"
 LATEX_FILE = OUTPUT_DIR / "q2e_pricing_errors.tex"
 

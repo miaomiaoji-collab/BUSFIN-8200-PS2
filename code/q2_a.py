@@ -20,7 +20,7 @@ import pandas as pd
 REPO_ROOT = Path(__file__).resolve().parents[1]
 BM_FILE = REPO_ROOT / "data" / "Portfolios_Formed_on_BE-ME.csv"
 FF3_FILE = REPO_ROOT / "data" / "ff3.csv"
-OUTPUT_DIR = REPO_ROOT / "output"
+OUTPUT_DIR = REPO_ROOT / "results"
 PLOT_FILE = OUTPUT_DIR / "q2a_b_coefficients.pdf"
 SDF_FILE = OUTPUT_DIR / "q2a_M_star.csv"
 

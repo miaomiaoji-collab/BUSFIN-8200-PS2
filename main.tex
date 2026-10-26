@@ -600,7 +600,7 @@ Figure~\ref{fig:q2a_b} plots the estimated \(\hat b\) coefficients across the 10
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\textwidth]{q2a_b_coefficients.pdf}
+    \includegraphics[width=0.75\textwidth]{results/q2a_b_coefficients.pdf}
     \caption{Estimated \(b\) coefficients across book-to-market decile portfolios}
     \label{fig:q2a_b}
 \end{figure}
@@ -635,7 +635,7 @@ Figure~\ref{fig:q2b_b} plots the estimated \(\hat b\) coefficients across the 10
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\textwidth]{q2b_b_coefficients.pdf}
+    \includegraphics[width=0.75\textwidth]{results/q2b_b_coefficients.pdf}
     \caption{Estimated \(b\) coefficients across momentum decile portfolios}
     \label{fig:q2b_b}
 \end{figure}
@@ -682,7 +682,7 @@ Figure~\ref{fig:q2c_b} plots the estimated \(\hat b\) coefficients for the book-
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\textwidth]{q2c_b_coefficients.pdf}
+    \includegraphics[width=0.75\textwidth]{results/q2c_b_coefficients.pdf}
     \caption{Estimated \(b\) coefficients for book-to-market and momentum portfolios}
     \label{fig:q2c_b}
 \end{figure}
@@ -714,7 +714,7 @@ For each of the 20 portfolios, the pricing error is calculated under the SDFs fr
 \widehat{\operatorname{Cov}}(-M^*,xR_p).
 \]
 
-\input{q2d_pricing_errors.tex}
+\input{results/q2d_pricing_errors.tex}
 
 The SDF from Q2(a) prices the 10 book-to-market portfolios almost exactly in sample, but produces larger pricing errors for the momentum portfolios. The SDF from Q2(b) prices the momentum portfolios almost exactly but produces pricing errors for the book-to-market portfolios.
 
@@ -733,7 +733,7 @@ For each of the 20 portfolios, the out-of-sample pricing error is calculated as
 \widehat{\operatorname{Cov}}_{OS}(-M^{*}_{OS},xR_p).
 \]
 
-\input{q2e_pricing_errors.tex}
+\input{results/q2e_pricing_errors.tex}
 
 The out-of-sample pricing errors are much larger than the in-sample pricing errors in Q2(d). The average absolute pricing error is about \(0.81\%\) per month for the book-to-market portfolios and \(1.11\%\) per month for the momentum portfolios.
 
@@ -1157,7 +1157,7 @@ L=23.
 
 The pricing errors and corresponding t-statistics for the wealth portfolio, the 10 book-to-market portfolios, and the 10 momentum portfolios are reported below.
 
-\input{q3e_pricing_errors.tex}
+\input{results/q3e_pricing_errors.tex}
 
 The joint test that all 21 pricing errors are zero gives
 
@@ -1382,6 +1382,7 @@ is always positive as long as
 
 \[
 R_{w,t+1}>0.
+\]
 
 
 \subsection{Q4(b)}
@@ -1416,7 +1417,7 @@ L=23.
 
 The pricing errors and corresponding t-statistics for the wealth portfolio, the 10 book-to-market portfolios, and the 10 momentum portfolios are reported below.
 
-\input{q4b_results.tex}
+\input{results/q4b_results.tex}
 
 The joint test that all 21 pricing errors are zero gives
 
@@ -1521,7 +1522,7 @@ SE(\hat b_{\mathrm{eff}})=0.4582.
 
 The pricing errors and corresponding t-statistics for the wealth portfolio, the 10 book-to-market portfolios, and the 10 momentum portfolios are reported below.
 
-\input{q4c_results.tex}
+\input{results/q4c_results.tex}
 
 The joint test that all 21 pricing errors are zero gives
 
@@ -1571,7 +1572,7 @@ L=23.
 
 The estimated pricing errors and corresponding Newey-West t-statistics for the wealth portfolio, the 10 book-to-market portfolios, and the 10 momentum portfolios are reported below.
 
-\input{q4d_results.tex}
+\input{results/q4d_results.tex}
 
 The GRS test of the null hypothesis
 
@@ -1633,7 +1634,7 @@ and its t-statistic is calculated using Newey-West standard errors from a time-s
 
 The factor risk premium estimate and the pricing errors and corresponding t-statistics for the wealth portfolio, the 10 book-to-market portfolios, and the 10 momentum portfolios are reported below.
 
-\input{q4e_results.tex}
+\input{results/q4e_results.tex}
 
 Most pricing errors are not statistically significant. However, the lowest momentum portfolio has a significantly negative pricing error, while the highest momentum portfolio has a significantly positive pricing error. This suggests that the linear beta-pricing model does not fully capture the return spread across the momentum portfolios.
 

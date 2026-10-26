@@ -28,8 +28,8 @@ from q2_a import (
 REPO_ROOT = Path(__file__).resolve().parents[1]
 MOM_FILE = REPO_ROOT / "data" / "10_Portfolios_Prior_12_2.csv"
 FF3_FILE = REPO_ROOT / "data" / "ff3.csv"
-Q2A_SDF_FILE = REPO_ROOT / "output" / "q2a_M_star.csv"
-OUTPUT_DIR = REPO_ROOT / "output"
+Q2A_SDF_FILE = REPO_ROOT / "results" / "q2a_M_star.csv"
+OUTPUT_DIR = REPO_ROOT / "results"
 PLOT_FILE = OUTPUT_DIR / "q2b_b_coefficients.pdf"
 SDF_FILE = OUTPUT_DIR / "q2b_M_star.csv"
 
