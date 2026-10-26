@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.27)  26 OCT 2026 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.27)  26 OCT 2026 19:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -209,15 +209,16 @@ Package pdftex.def Info: results/q2c_b_coefficients.pdf  used on input line 685
 (pdftex.def)             Requested size: 258.75pt x 163.2234pt.
  [9 <./results/q2b_b_coefficients.pdf>]
 (./results/q2d_pricing_errors.tex) [10 <./results/q2c_b_coefficients.pdf>]
-(./results/q2e_pricing_errors.tex) [11] [12] [13] [14] [15]
+(./results/q2e_pricing_errors.tex) [11] [12] [13] [14]
+(./results/q3c_results.tex) (./results/q3d_results.tex) [15]
 (./results/q3e_pricing_errors.tex) [16] [17] [18] (./results/q4b_results.tex)
 [19] [20] (./results/q4c_results.tex) [21] [22] (./results/q4d_results.tex)
 [23] [24] (./results/q4e_results.tex) [25] [26] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2022 strings out of 478994
- 28664 string characters out of 5858184
- 330292 words of memory out of 5000000
- 19485 multiletter control sequences out of 15000+600000
+ 2032 strings out of 478994
+ 28862 string characters out of 5858184
+ 330310 words of memory out of 5000000
+ 19489 multiletter control sequences out of 15000+600000
  411534 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,9n,74p,384b,279s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -242,7 +243,7 @@ type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmti9.pfb>
-Output written on main.pdf (26 pages, 286335 bytes).
+Output written on main.pdf (26 pages, 286954 bytes).
 PDF statistics:
  318 PDF objects out of 1000 (max. 8388607)
  146 compressed objects within 2 object streams

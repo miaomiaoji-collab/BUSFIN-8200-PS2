@@ -1037,100 +1037,43 @@ E\left[R_{w,t}^{-\gamma}xR_{w,t}\right]=0
 and
 
 \[
-E\left[R_{w,t}^{-\gamma}
-\left(z_{t-1}xR_{w,t}\right)\right]=0,
+E\left[
+R_{w,t}^{-\gamma}
+\left(z_{t-1}xR_{w,t}\right)
+\right]=0,
 \]
 
-\(\gamma\) is estimated by GMM with an identity weighting matrix using \(T=973\) monthly observations.
+\(\gamma\) is estimated by GMM using an identity weighting matrix.
 
-The estimate is
-
-\[
-\hat{\gamma}=2.9851,
-\]
-
-with a Newey-West standard error of
-
-\[
-SE(\hat{\gamma})=0.7150.
-\]
-
-The two pricing errors and their t-statistics are
-
-\[
-\begin{array}{lcc}
-\hline
-& \text{Pricing Error} & t\text{-statistic}\\
-\hline
-\text{Wealth portfolio} & -0.00312 & -0.802\\
-\text{Managed portfolio} & 0.00223 & 0.802\\
-\hline
-\end{array}
-\]
-
-The data-driven Newey-West procedure selects
+The estimation uses \(T=973\) monthly observations. The data-driven Newey-West procedure selects
 
 \[
 L=22.
-\]
+\] 
 
-The joint test that the two pricing errors are zero gives
+The estimate of \(\gamma\), its Newey-West standard error, the pricing errors and corresponding t-statistics, and the joint chi-square test are reported below.
 
-\[
-\chi^2(1)=0.644,
-\qquad
-p=0.422.
-\]
+\input{results/q3c_results.tex}
 
-Thus, the null hypothesis that the pricing errors are jointly zero cannot be rejected. This suggests that the CRRA SDF is broadly consistent with both the wealth-portfolio and managed-portfolio moment conditions.
+The joint test does not reject the null hypothesis that the two pricing errors are jointly zero. Therefore, the CRRA SDF is broadly consistent with both the wealth-portfolio and managed-portfolio moment conditions.
 
 \subsection{Q3(d)}
 
-Using the same two moment conditions as in Q3(c), \(\gamma\) is re-estimated using two-step GMM. In the second step, the inverse of the Newey-West long-run covariance matrix from the first step is used as the weighting matrix.
+Using the same two moment conditions as in Q3(c), \(\gamma\) is re-estimated using two-step GMM.
 
-Using \(T=973\) observations, the two-step GMM estimate is
+In the first step, the identity weighting matrix is used. In the second step, the inverse of the Newey-West long-run covariance matrix from the first step is used as the weighting matrix.
 
-\[
-\hat{\gamma}=2.9448,
-\]
-
-with a Newey-West standard error of
-
-\[
-SE(\hat{\gamma})=0.7169.
-\]
-
-The pricing errors for the wealth portfolio and the managed portfolio are
-
-\[
--0.00182
-\quad\text{and}\quad
-0.00404,
-\]
-
-with corresponding t-statistics of
-
-\[
--0.802
-\quad\text{and}\quad
-0.802.
-\]
-
-The first-step Newey-West procedure selects
+The estimation uses the same \(T=973\) monthly observations as in Q3(c). The data-driven Newey-West procedure selects
 
 \[
 L=22.
 \]
 
-The joint test that the two pricing errors are zero gives
+The two-step GMM estimate of \(\gamma\), its Newey-West standard error, the pricing errors and corresponding t-statistics, and the joint chi-square test are reported below.
 
-\[
-\chi^2(1)=0.6440,
-\qquad
-p=0.4223.
-\]
+\input{results/q3d_results.tex}
 
-Thus, the null hypothesis that the pricing errors are jointly zero cannot be rejected. This suggests that the two-step GMM specification remains consistent with the two pricing conditions considered here.
+The joint test again does not reject the null hypothesis that the two pricing errors are jointly zero. Therefore, the two-step GMM specification remains consistent with the wealth-portfolio and managed-portfolio moment conditions.
 
 
 \subsection{Q3(e)}
