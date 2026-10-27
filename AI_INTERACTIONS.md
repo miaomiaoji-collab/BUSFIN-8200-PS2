@@ -474,3 +474,23 @@ Help me push
 ### Assistance provided
 
 Recorded the student's revised Q2(c) answer in the TP pre-interaction snapshot, confirmed that the change explicitly connects the larger attainable Sharpe ratio to the Hansen--Jagannathan SDF-volatility bound, preserved the wording without modification, appended this standalone audit entry, created the required post-interaction snapshot, and pushed the resulting commits to `origin/main`. No substantive answer text, specification, empirical design, code, or generated result was changed by the assistant.
+
+## Interaction: 2026-10-26T20:13:54-04:00 — Final AI usage summary
+
+- **Problem-set item:** Entire Problem Set 2 — final AI usage documentation
+- **Purpose:** Create the policy-required `AI_USAGE.md` as a complete, factual summary of AI use throughout the problem set.
+- **Git commit before interaction:** `d856b5bbc1862e5e3a4652cf65d0552c8589d802`
+- **Assistance categories:** other — documentation, audit summarization, and Git traceability
+- **Files inspected:** `Problem Sets AI Policy.pdf`; `AI_INTERACTIONS.md`; the complete Git commit history and recorded pre/post-interaction file changes
+- **Files directly modified:** `AI_USAGE.md`; `AI_INTERACTIONS.md`
+- **Errors, omissions, or ambiguities identified:** `AI_USAGE.md` was absent before this interaction. The existing interaction log contained 20 prior standalone TP entries with matching Git evidence. No ambiguity prevented preparation of the factual summary.
+- **Substantive mathematical, economic, or empirical suggestions:** None. The summary reports the repository evidence without adding a new solution, empirical decision, interpretation, or evaluation of policy compliance.
+- **Grouped minor requests within this invocation:** No
+
+### User's substantive prompt
+
+generate ai_usage.md
+
+### Assistance provided
+
+Read the governing policy's required summary format, reviewed every entry in `AI_INTERACTIONS.md`, and examined the chronological Git history and recorded file changes. Created `AI_USAGE.md` with a summary table and 21 complete interaction summaries organized by problem-set item and chronologically within each item. For every interaction, documented its purpose, work existing at the pre-interaction snapshot, AI assistance, direct file modifications, substantive decisions, post-interaction state, observable subsequent work, and type of AI use. Included this summary-generation interaction itself, distinguished assistant suggestions from student decisions, used “not shown in the available record” where appropriate, and did not change any solution, specification, code, data, empirical result, or report file. Appended this standalone TP record without modifying any prior interaction entry.
